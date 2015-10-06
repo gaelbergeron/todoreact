@@ -13,7 +13,7 @@
     <%if !session[:user_id].nil?%>
       <p><%= link_to 'Logout', logout_path %></p>
     <%else%>
-      <p><%= link_to 'Login', login_path %></p>
+      <p><%= link_to 'Login', login_path %> or <%= link_to 'Sign up', signup_path %> to start using todos! </p>
     <%end%>
   </header>
 <body>

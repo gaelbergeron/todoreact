@@ -3,6 +3,6 @@
     <h1>todos!</h1>
   </div>
     <% if !session[:user_id].nil? %>
-      <%= react_component 'TodoApp' %>    
+      <%= react_component 'TodoApp', todos: @todos %>    
     <%end%>
 </div>

@@ -9,6 +9,13 @@
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
 
 </head>
+  <header>
+    <%if !session[:user_id].nil?%>
+      <p><%= link_to 'Logout', logout_path %></p>
+    <%else%>
+      <p><%= link_to 'Login', login_path %></p>
+    <%end%>
+  </header>
 <body>
 
 <%= yield %>

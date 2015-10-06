@@ -1,0 +1,8 @@
+<div id="page-container">
+  <div class="page-header">
+    <h1>todos!</h1>
+  </div>
+    <% if !session[:user_id].nil? %>
+      <%= react_component 'TodoApp' %>    
+    <%end%>
+</div>

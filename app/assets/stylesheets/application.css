@@ -13,3 +13,28 @@
  *= require_tree .
  *= require_self
  */
+
+/** {
+    border-style: solid;
+    border-width: 1px;
+    border-color: red;
+}
+*/
+#page-container {
+  margin: auto;
+  width: 40em;
+
+}
+
+#input-field {
+  width: 35.9em;
+  height: 2.5em;
+}
+
+#not-member {
+  margin-top: 2em;
+}
+
+#input-container{
+  margin-top: 2em;
+}

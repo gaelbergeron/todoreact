@@ -78,8 +78,8 @@ var TodoElement = React.createClass({
     return (
       <div>
       <h3 style={style} >{this.props.description}</h3>
-      <button onClick={this.toggleState}>{this.props.done? "Reset" : "Mark as Complete"}</button>
-      <button onClick={this.deleteTodo}>Delete</button>
+      <button onClick={this.toggleState} className="btn btn-primary" type="button">{this.props.done? "Mark as Uncomplete" : "Mark as Complete"}</button>
+      <button onClick={this.deleteTodo} className="btn btn-danger" type="button">Delete</button>
       </div>
       )
   }
@@ -100,9 +100,9 @@ var TodoInput = React.createClass({
   },
   render: function(){
     return (
-      <div>
-        <textarea value={this.state.description} onChange={this.updateDescription} ></textarea>
-        <button onClick={this.handleSubmit} >Save</button>
+      <div id="input-container">
+        <input value={this.state.description} onChange={this.updateDescription} id="input-field"></input>
+        <button onClick={this.handleSubmit} className="btn btn-primary" type="button">Save</button>
       </div>
     );
   }

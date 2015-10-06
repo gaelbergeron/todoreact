@@ -3,8 +3,16 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  get '/', to: 'todo#show' 
-  resources :todo
+  get 'signup' => 'users#new'
+  get 'login' => 'sessions#new'
+  post 'login' => 'sessions#create'
+  get 'logout' => 'sessions#destroy'
+
+  root 'tasks#show'
+
+  resources :users do
+    resources :tasks
+  end
 
 
   # Example of regular route:

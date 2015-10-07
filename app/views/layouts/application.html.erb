@@ -7,20 +7,18 @@
   <%= csrf_meta_tags %>
   <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-
 </head>
-  <header>
-    <%if !session[:user_id].nil?%>
-      <p><%= link_to 'Logout', logout_path %></p>
-    <%else%>
-      <p><%= link_to 'Login', login_path %> or <%= link_to 'Sign up', signup_path %> to start using todos! </p>
-    <%end%>
-  </header>
+
+<header>
+  <%if !session[:user_id].nil?%>
+    <p><%= link_to 'Logout', logout_path %></p>
+  <%else%>
+    <p><%= link_to 'Login', login_path %> or <%= link_to 'Sign up', signup_path %> to start using todos! </p>
+  <%end%>
+</header>
+
 <body>
-
-<%= yield %>
-
-
+  <%= yield %>
 </body>
 </html>
 

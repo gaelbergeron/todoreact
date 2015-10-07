@@ -1,28 +1,17 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+#todos!
+todos! is a simple CRUD application allowing users to manage their to-do list.
+todos! is built on Rails back-end and a React front-end. It has the following features:
+- User auth using Rails,
+- Todo tasks creation, deletion and update (complete/uncompleted) using React and sustained in a Postgres database through Ajax calls, 
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+This project is open-source, any contribution will be very appreciated! For any idea or feedback, feel free to open an issue in this repo or reach out by email: gael.bergeron@gmail.com 
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+## Testing
+For testing:
+1. Git for & clone 
+2. Bundle install 
+3. be rake db:create 
+4. rails s (on localhost:3000)

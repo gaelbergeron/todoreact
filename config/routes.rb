@@ -10,9 +10,8 @@ Rails.application.routes.draw do
 
   root 'tasks#show'
 
-  resources :users do
-    resources :tasks
-  end
+  resources :users
+  resources :tasks
 
 
   # Example of regular route:

@@ -1,6 +1,6 @@
 == README
 
-**todos!**
+*todos!*
 
 todos! is a simple CRUD application allowing users to manage their to-do list.
 todos! is built on Rails back-end and a React front-end. It has the following features:
@@ -9,7 +9,7 @@ todos! is built on Rails back-end and a React front-end. It has the following fe
 
 This project is open-source, any contribution will be very appreciated! For any idea or feedback, feel free to open an issue in this repo or reach out by email: gael.bergeron@gmail.com 
 
-**Testing**
+*Testing*
 
 For testing:
 1. Git for & clone 
